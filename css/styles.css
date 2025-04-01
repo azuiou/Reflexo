@@ -1,0 +1,1090 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Style pour l'élément header */
+header {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  /* S'adapte automatiquement au contenu */
+}
+
+/* Si tu veux éviter que l'image se répète ou se déforme */
+header img {
+  width: 100%;
+  height: auto;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  /* background-color: #f4f1e1;   */
+  background-color: #DACBB4;
+  color: #4a4a4a;
+  /* Gris foncé */
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* Style du footer */
+footer {
+  /* background-color: #f9f3e7; */
+  background-color: #AF512F;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Ajout d'un style pour le copyright */
+footer p {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  /* Police moderne */
+  letter-spacing: 1px;
+  /* Espacement pour un effet aéré */
+}
+
+/* Effet au survol (optionnel) */
+footer p:hover {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/* Titre principal */
+h1 {
+  font-size: 2.5em;
+  color: #6b4f31;
+  /* Ocre foncé */
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Logo */
+img {
+  max-width: 200px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.contact-info {
+  padding-right: 40px;
+  /* Ajoute un peu d’espace à droite */
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(98, 95, 91, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-info:last-of-type {
+  padding-bottom: 20px;
+}
+
+.contact-info a {
+  color: black;
+  /* Ocre foncé */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+
+/* Titre secondaire */
+h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #6b4f31;
+  /* Ocre foncé */
+  margin-top: 50px;
+}
+
+.home-title {
+  font-size: 2em;
+  text-align: center;
+  color: black;
+  /* Ocre foncé */
+  margin-top: 50px;
+}
+
+/* Texte réflexologie */
+.reflexo-text {
+  font-size: 18px;
+  color: black;
+  /* Ocre foncé */
+  font-style: italic;
+  margin: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reflexo-content {
+  display: flex;
+  align-items: center;
+  /* Centre verticalement */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.reflexo-img {
+  width: 120px;
+  height: auto;
+  margin-left: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.reflexo-img-container {
+  display: flex;
+  align-items: center;
+  /* Centre l’image verticalement */
+  justify-content: center;
+  /* Centre l’image horizontalement */
+  height: 100%;
+  /* Prend toute la hauteur du parent */
+  flex-shrink: 0;
+  margin-left: auto;
+  /* Pousse l'image le plus possible à droite */
+  padding-right: 100px;
+  /* Ajoute un peu d’espace entre l’image et le bord droit */
+}
+
+.text-content {
+  flex: 1;
+  text-align: justify;
+  /* Pour un rendu plus propre */
+}
+
+
+/* Sections de contenu */
+.reflexo-block {
+  background-color: #f9f3e7;
+  /* Beige clair */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.reflexo-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reflexo-block h3 {
+  font-size: 1.8em;
+  color: #6b4f31;
+  /* Ocre foncé */
+  margin-bottom: 15px;
+}
+
+.reflexo-block p,
+.reflexo-block ul {
+  font-size: 1.1em;
+  color: #4a4a4a;
+  /* Gris foncé */
+}
+
+.reflexo-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reflexo-block ul li {
+  padding: 8px 0;
+}
+
+.reflexo-block ul li::before {
+  content: "✔️";
+  margin-right: 10px;
+  color: #6b4f31;
+  /* Ocre foncé */
+}
+
+/* Menu Hamburger */
+.menu-container {
+  position: relative;
+  z-index: 1000;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.4s ease;
+}
+
+.hamburger-menu.scrolled {
+  top: 10px;
+}
+
+.hamburger-menu .bar {
+  width: 30px;
+  height: 4px;
+  margin: 6px 0;
+  background-color: #6b4f31;
+  transition: 0.4s ease;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+
+.hamburger-menu.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Animation d’ouverture du menu */
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f9f3e7;
+  /* Beige clair pour correspondre à la charte de couleur */
+  width: 240px;
+  height: 100%;
+  padding-top: 60px;
+  box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transform: translateX(240px);
+}
+
+/* Lorsque le menu est actif */
+.menu.active {
+  display: block;
+  transform: translateX(0);
+}
+
+/* Liste des éléments du menu */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 15px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #6b4f31;
+  /* Ocre foncé */
+  font-size: 18px;
+  display: block;
+}
+
+.menu li a:hover {
+  color: #fff;
+  background-color: #6b4f31;
+  /* Ocre foncé */
+  padding-left: 10px;
+  transition: 0.3s ease;
+}
+
+.menu li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Sous-menu */
+.submenu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.submenu.active {
+  display: block;
+}
+
+/* Sous-menu */
+.submenu2 {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.submenu2.active {
+  display: block;
+}
+
+/* Effet d'apparition */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Effet de survol de l'image */
+img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+
+#reflexo-entreprise {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#reflexo-entreprise h2 {
+  font-size: 2em;
+  color: #6b4f31;
+  /* Ocre foncé */
+  margin-bottom: 20px;
+}
+
+#reflexo-entreprise .reflexo-block {
+  background-color: #f9f3e7;
+  /* Beige clair */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#reflexo-entreprise .reflexo-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#reflexo-entreprise .reflexo-block h3 {
+  font-size: 1.8em;
+  color: #6b4f31;
+  margin-bottom: 15px;
+}
+
+#reflexo-entreprise .reflexo-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#reflexo-entreprise .reflexo-block ul li {
+  padding: 8px 0;
+  font-size: 1.1em;
+  color: #4a4a4a;
+}
+
+#reflexo-entreprise .reflexo-block ul li::before {
+  content: "✔️";
+  margin-right: 10px;
+  color: #6b4f31;
+}
+
+/* Section Ateliers */
+#ateliers {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f3e7;
+  /* Beige clair */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Titre Ateliers */
+#ateliers h2 {
+  font-size: 2.5em;
+  color: #6b4f31;
+  /* Ocre foncé */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Bloc commun pour chaque section (intro, objectifs, pour qui) */
+#ateliers>div {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  /* Espacement entre les blocs */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro des ateliers */
+#ateliers .intro {
+  font-size: 1.2em;
+  color: #6b4f31;
+  text-align: center;
+}
+
+/* Objectifs des ateliers */
+#ateliers .objectifs h3 {
+  font-size: 2em;
+  color: #6b4f31;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#ateliers .objectifs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#ateliers .objectifs ul li {
+  font-size: 1.1em;
+  color: #4a4a4a;
+  /* Gris foncé */
+  margin: 10px 0;
+}
+
+/* Pour qui ? */
+#ateliers .pour-qui {
+  margin-top: 30px;
+}
+
+#ateliers .pour-qui h3 {
+  font-size: 2em;
+  color: #6b4f31;
+  /* Ocre foncé */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#ateliers .pour-qui .cible {
+  margin-bottom: 15px;
+}
+
+#ateliers .pour-qui .cible h4 {
+  font-size: 1.6em;
+  color: #6b4f31;
+  /* Ocre foncé */
+  margin-bottom: 5px;
+}
+
+#ateliers .pour-qui .cible p {
+  font-size: 1.1em;
+  color: #4a4a4a;
+  /* Gris foncé */
+  text-align: center;
+}
+
+/* Section Tarifs */
+
+/* Section Tarifs */
+#tarifs {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f3e7;
+  /* Beige clair */
+  max-width: 1100px;
+  /* Augmenter la largeur max du conteneur pour donner plus d'espace */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#tarifs h2 {
+  font-size: 2.5em;
+  color: #6b4f31;
+  /* Ocre foncé */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1100px;
+  /* Limite la largeur max */
+  margin: auto;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.3s ease-in-out;
+  width: max-content;
+}
+
+.tarif-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: flex-end;
+  display: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarif-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.tarif-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tarif-info h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tarif-info p {
+  font-size: 1.1em;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+#tarifs {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f3e7;
+  /* Beige clair */
+  max-width: 1100px;
+  /* Augmenter la largeur max du conteneur pour donner plus d'espace */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#tarifs h2 {
+  font-size: 2.5em;
+  color: #6b4f31;
+  /* Ocre foncé */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* Centrer les éléments horizontalement */
+  align-items: center;
+  /* Centrer les éléments verticalement */
+  transition: transform 0.3s ease;
+  width: 100%;
+  /* S'assurer que le carrousel prend toute la largeur disponible */
+  overflow: hidden;
+  /* Masquer les cartes qui débordent */
+}
+
+.tarif-card {
+  position: relative;
+  flex: 0 0 auto;
+  /* Laisser les cartes se redimensionner automatiquement */
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  /* Largeur des cartes */
+  height: 300px;
+  /* Hauteur des cartes */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 15px;
+  /* Espacement légèrement plus grand entre les cartes */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: none;
+  /* Par défaut, cacher toutes les cartes */
+}
+
+.tarif-info {
+  position: absolute;
+  /* Positionner l'élément en bas */
+  bottom: 0;
+  /* Coller au bas de la carte */
+  left: 0;
+  width: 100%;
+  /* S'assurer qu'il prend toute la largeur */
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Carrousel prev / next buttons */
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+
+.tarif-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.tarif-info h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tarif-info p {
+  font-size: 1.1em;
+}
+
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Section Déontologie */
+#deontologie {
+  padding: 20px;
+  margin: 20px auto;
+  margin-top: 50px;
+  background-color: #f9f3e7;
+  /* Beige clair */
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+}
+
+#deontologie h2 {
+  font-size: 2.5em;
+  color: #6b4f31;
+  /* Ocre foncé */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#deontologie p {
+  font-size: 1.2em;
+  color: #4a4a4a;
+  /* Gris foncé */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.deontologie-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.deontologie-list li {
+  font-size: 1.2em;
+  color: #4a4a4a;
+  /* Gris foncé */
+  margin-bottom: 15px;
+}
+
+.deontologie-list li strong {
+  color: #6b4f31;
+  /* Ocre foncé */
+}
+
+/* Section Mentions légales */
+#mentions-legales {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #f9f3e7;
+  /* Beige clair */
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mentions-legales h2 {
+  font-size: 2.5em;
+  color: #6b4f31;
+  /* Ocre foncé */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#mentions-legales p {
+  font-size: 1.2em;
+  color: #4a4a4a;
+  /* Gris foncé */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#mentions-legales p strong {
+  color: #6b4f31;
+  /* Ocre foncé */
+}
+
+
+/* Positionnement du logo */
+.logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+  /* Ajuste la taille du logo */
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+.reflexo-section {
+  display: none;
+  /* Masquée par défaut */
+  text-align: center;
+}
+
+#reflexo-plantaire-section {
+  display: block;
+  /* Afficher uniquement celle avec l'ID */
+}
+
+.bienfaits-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+  justify-items: center;
+  margin-top: 20px;
+  max-width: 800px;
+  /* Ajuste selon la largeur souhaitée */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bienfait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bienfait img {
+  width: 110px;
+  /* Ajuste selon tes besoins */
+  height: 125px;
+  border-radius: 10px;
+}
+
+.bienfait p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#digestion img {
+  width: 200px;
+}
+
+#relaxation img {
+  width: 200px;
+  height: 150px;
+}
+
+#posture img {
+  width: 200px;
+  height: 125px;
+}
+
+#TMS img {
+  width: 200px;
+  height: 125px;
+}
+
+
+/* Tablettes (moins de 1024px) */
+@media screen and (max-width: 1024px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  .contact-info {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+  }
+
+  .reflexo-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .reflexo-img-container {
+      padding-right: 0;
+      margin-bottom: 10px;
+  }
+}
+
+/* Mobiles (moins de 768px) */
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 1.8em;
+  }
+
+  h2 {
+      font-size: 1.5em;
+  }
+
+  /* Centrage du texte et des éléments */
+  .contact-info,
+  .reflexo-content,
+  .reflexo-block {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .reflexo-img {
+      width: 100%;
+      margin-left: 0px;
+      max-width: 250px;
+  }
+
+  /* Menu */
+  .hamburger-menu {
+      top: 10px;
+      right: 10px;
+  }
+
+  .menu {
+      width: 100%;
+  }
+
+}
+
+/* Petits écrans (moins de 1024px) */
+@media screen and (max-width: 1024px) {
+  body {
+      min-height: 100vh;
+      /* Assure que le body prend toute la hauteur de la fenêtre */
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+  }
+
+  /* Conteneur principal */
+  .main-content {
+      flex: 1;
+      /* Prend tout l'espace disponible */
+      padding-bottom: 50px;
+      /* Ajoute un peu de marge pour ne pas que le footer touche le bas */
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+  }
+
+  .reflexo-img-container,
+  .logo-container {
+      width: 80px;
+      height: auto;
+      border-radius: 50%;
+      display: block;
+      margin: 10px auto;
+  }
+
+  .reflexo-img {
+      width: 100%;
+      margin-left: 0px;
+      max-width: 250px;
+  }
+
+  .menu-toggle {
+      margin-right: 15px;
+  }
+
+  h1 {
+      font-size: 1.6em;
+  }
+
+  h2 {
+      font-size: 1.3em;
+  }
+
+  .reflexo-block {
+      max-width: 95%;
+  }
+
+  #deontologie {
+      max-width: 95%;
+  }
+
+  #mentions-legales {
+      max-width: 95%;
+  }
+
+  .contact-info {
+      padding: 10px;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .home-title {
+      font-size: 1.2em;
+  }
+
+  .reflexo-text {
+      font-size: 0.9em;
+  }
+}

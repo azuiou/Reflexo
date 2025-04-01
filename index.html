@@ -1,103 +1,352 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="fr">
+
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Bien-être naturellement</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script defer src="js/fontawesome/all.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCUEIL</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 
-<body id="top">
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <h1 id="home">ACCUEIL</h1>
 
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="contact-info">
+            <div class="text-content">
+                <p>Marie Marliac - Réflexologue plantaire et faciale.</p>
+                <p>Maison médicale - 35 Rue des Allières 43110 Aurec-sur-Loire</p>
+
+                <div class="contact-links">
+                    <p>
+                        <a href="tel:+33767514306" class="contact-link">
+                            📞 +33 7 67 51 43 06
+                        </a> -
+                        <a href="https://www.instagram.com/mmarliac/" target="_blank" class="contact-link">
+                            📸 Instagram
+                        </a>
+                    </p>
+                </div>
+
+                <p>Mail : <a href="mailto:mm43reflexo@gmail.com">mm43reflexo@gmail.com</a></p>
+            </div>
+            <div class="reflexo-img-container">
+                <img src="images/Marie.jpeg" alt="Déroulement" class="reflexo-img">
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <div class="text-content">
+                <h2 class="home-title">PRENEZ SOIN DE VOUS NATURELLEMENT</h2>
+                <p class="reflexo-text">
+                    La réflexologie s'adresse à tous, enfants et adultes et est idéale en complément d'un traitement médicamenteux.<br>
+                    <b>MAIS NE PEUT EN AUCUN CAS SE SUBSTITUER À UN TRAITEMENT OU UN AVIS ALLOPATHIQUE</b>
+                </p>
+            </div>
+        </div>
+        <br>
+    </header>
+    <!-- Menu Hamburger -->
+    <div class="menu-container">
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="#home" id="home">Accueil</a></li>
+                <li>
+                    <a href="#" id="services-link">Services</a>
+                    <ul class="submenu">
+                        <li><a href="#reflexo-plantaire">Réflexologie plantaire</a></li>
+                        <li><a href="#reflexo-faciale">Réflexologie faciale</a></li>
+                        <li><a href="#reflexo-entreprise">Réflexologie entreprise</a></li>
+                        <li><a href="#Ateliers">Ateliers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="cabinet-link">Le cabinet</a>
+                    <ul class="submenu2">
+                        <li><a href="#tarifs">Tarifs</a></li>
+                        <li><a href="#deontologie">Déontologie</a></li>
+                        <li><a href="#mentions-legales">Mentions légales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- La Réflexologie Plantaire -->
+    <div id="reflexo-plantaire-section" class="reflexo-section">
+        <h2 id="reflexo-plantaire" class="toggle-section">La Réflexologie Plantaire</h2>
+        <!-- La section qui sera masquée/visible -->
+        <!-- Bloc 1: Introduction -->
+        <div class="reflexo-block">
+            <h3>La réflexologie plantaire</h3>
+            <p>La réflexologie plantaire est une technique naturelle et manuelle qui consiste à stimuler des zones de réflexes situées sur les pieds.</p>
+            <p>Elle repose sur l'idée que chaque zone du pied correspond à une partie précise du corps (organes, glandes, etc.).</p>
+            <p>En exerçant des pressions sur ces points réflexes, on favorise l'équilibre physique, émotionnel, énergétique et le bien-être en général.</p>
+        </div>
+        <!-- Bloc 2: Bienfaits -->
+        <div class="reflexo-block">
+            <h3>Bienfaits de la réflexologie plantaire</h3>
+            <div class="bienfaits-container">
+                <div class="bienfait" id="relaxation">
+                    <img src="images/relaxation.png" alt="Stress">
+                    <p>Réduit le stress et favorise la relaxation</p>
+                </div>
+                <div class="bienfait" id="digestion">
+                    <img src="images/digestion.png" alt="Troubles digestifs">
+                    <p>Améliore le sommeil et soulage les troubles digestifs</p>
+                </div>
+                <div class="bienfait">
+                    <img src="images/sanguine.png" alt="Circulation sanguine">
+                    <p>Améliore la circulation sanguine et lymphatique</p>
+                </div>
+                <div class="bienfait">
+                    <img src="images/musculaires.png" alt="Douleurs chroniques">
+                    <p>Soulage les tensions musculaires et les douleurs chroniques</p>
+                </div>
+                <div class="bienfait">
+                    <img src="images/immunitaire.png" alt="Stystème immunitaire">
+                    <p>Stimule le système immunitaire</p>
+                </div>
+                <div class="bienfait">
+                    <img src="images/toxines.png" alt="Elimination toxines">
+                    <p>Favorise l'élimination des toxines</p>
+                </div>
+            </div>
+        </div>
+        <!-- Bloc 3: Déroulement d'une séance -->
+        <div class="reflexo-block">
+            <h3 class="reflexo-title">Déroulement d'une séance</h3>
+            <div class="reflexo-content">
+                <div class="text-content">
+                    <p>Une séance de réflexologie plantaire débute généralement par un entretien pour comprendre les besoins de la personne. Le praticien, par digitopression, stimule les zones réflexes du pied.</p>
+                    <p>La séance peut être relaxante, mais certaines zones sensibles peuvent indiquer des déséquilibres à travailler.</p>
+                </div>
+                <div class="reflexo-img-container">
+                    <img src="images/plantaire.jpg" alt="Déroulement" class="reflexo-img">
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
-
-        <!-- <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.png" alt="Homepage">
-            </a>
-        </div> -->
-
-        <div class="header-email">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z"/></svg>
-            <a href="mailto:#0">mm43reflexo@gmail.com</a>
+    <div id="reflexo-faciale-section" class="reflexo-section" style="display: none;">
+        <h2 id="reflexo-faciale">La Réflexologie Faciale</h2>
+        <div class="reflexo-block">
+            <h3>Introduction au Dien' Chan'</h3>
+            <p>Dien' Chan' est une méthode de soin d'origine vietnamienne développée par le professeur Bùi Quôc Châu.</p>
+            <p>Elle repose sur la stimulation de points de réflexes situés sur le visage pour soulager divers maux et rééquilibrer l'énergie du corps.</p>
         </div>
-
-    </header> <!-- end s-header -->
-
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro s-intro--particles">
-
-        <div id="particles-js" class="intro-particles"></div>
-
-        <div class="grid-overlay">
-            <div></div>
-        </div> 
-
-        <div class="row intro-content">
-
-            <div class="column">
-
-                <div class="intro-content__text">
-
-                    <h3>
-                    Prochainement
-                    </h3>
-                    
-                    <h1>
-                    Soyez prêts. <br>
-                    Le site internet <br>
-                    sera bientôt disponible.
-                    </h1>
-                </div> <!-- end intro-content__text -->
-            </div> <!-- end column -->
-
-        </div> <!--  end intro-content -->
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/particle-settings.js"></script>
-    <script src="js/main.js"></script>
-
+        <div class="reflexo-block">
+            <h3>Bienfaits du Dien' Chan'</h3>
+            <div class="bienfaits-container">
+                <div class="bienfait">
+                    <img src="images/sommeil.png" alt="Stress">
+                    <p>Stress, anxiété, troubles du sommeil</p>
+                </div>
+                <div class="bienfait">
+                    <img src="images/cervicales.png" alt="Tensions cervicales">
+                    <p>Tensions cervicales et lombaires</p>
+                </div>
+                <div class="bienfait">
+                    <img src="images/migraines.png" alt="Migraines">
+                    <p>Maux de tête et migraines</p>
+                </div>
+                <div class="bienfait">
+                    <img src="images/douleurs.png" alt="Douleurs">
+                    <p>Douleurs musculaires et articulaires</p>
+                </div>
+                <div class="bienfait" id="digestion">
+                    <img src="images/digestion.png" alt="Problèmes digestifs">
+                    <p>Problèmes digestifs</p>
+                </div>
+                <div class="bienfait">
+                    <img src="images/addictions.png" alt="Addictions">
+                    <p>Diminution/Arrêts des addictions</p>
+                </div>
+            </div>
+        </div>
+        <div class="reflexo-block">
+            <h3 class="reflexo-title">Déroulement d'une séance</h3>
+            <div class="reflexo-content">
+                <div class="text-content">
+                    <p>Une séance typique commence par un échange avec le praticien pour identifier les besoins spécifiques. Ensuite, des points précis seront stimulés sur le visage à l'aide de petits outils spécifiques (stylet, ...) ou de pressions manuelles.</p>
+                </div>
+                <div class="reflexo-img-container">
+                    <img src="images/faciale.jpeg" alt="Déroulement" class="reflexo-img">
+                </div>
+            </div>
+        </div>
+        <div class="reflexo-block">
+            <h3>Principes du Dien' Chan'</h3>
+            <p>Le visage est considéré comme une carte réflexologique, représentant l'ensemble du corps. En stimulant certains points précis, les capacités naturelles d'autorégulation du corps sont activées.</p>
+            <p>Cette méthode est non invasive et vise à améliorer la circulation énergétique, apaiser les douleurs et favoriser la détente.</p>
+        </div>
+    </div>
+    <div id="reflexo-entreprise-section" class="reflexo-section" style="display: none;">
+        <section id="reflexo-entreprise">
+            <h2>La Réflexologie en Entreprise</h2>
+            <div class="reflexo-block">
+                <h3>Une approche bien-être au travail</h3>
+                <p>La réflexologie en entreprise est une pratique de plus en plus répandue visant à améliorer le bien-être des salariés directement sur leur lieu de travail.</p>
+                <p>En proposant de telles séances, les entreprises favorisent la détente, la concentration et la productivité de leurs équipes.</p>
+            </div>
+            <div class="reflexo-block">
+                <h3>Pourquoi intégrer la réflexologie en entreprise ?</h3>
+                <p>Le monde du travail est souvent source de stress, de fatigue mentale et de tensions physiques.</p>
+                <p>La réflexologie en entreprise permet de :</p>
+                <div class="bienfaits-container">
+                    <div class="bienfait">
+                        <img src="images/stress.png" alt="Stress">
+                        <p>Réduire le stress et les tensions nerveuses</p>
+                    </div>
+                    <div class="bienfait">
+                        <img src="images/concentration.png" alt="Clarté mentale">
+                        <p>Améliorer la concentration et la clarté mentale</p>
+                    </div>
+                    <div class="bienfait" id="TMS">
+                        <img src="images/TMS.png" alt="TMS">
+                        <p>Prévenir les troubles musculo-squelettiques (TMS)</p>
+                    </div>
+                    <div class="bienfait" id="posture">
+                        <img src="images/posture.png" alt="Douleurs chroniques">
+                        <p>Apaiser les douleurs liées à une posture prolongée (dos, nuque, ...)</p>
+                    </div>
+                    <div class="bienfait">
+                        <img src="images/motivation.png" alt="Stystème immunitaire">
+                        <p>Renforcer la motivation et le bien-être général des salariés</p>
+                    </div>
+                    <div class="bienfait">
+                        <img src="images/absenteisme.png" alt="Elimination toxines">
+                        <p>Réduire l'absentéisme en améliorant la santé globale</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reflexo-block">
+                <h3>Organisation en entreprise</h3>
+                <ul>
+                    <li><strong>Durée des séances :</strong> entre 20 et 30 minutes par personne</li>
+                    <li><strong>Format :</strong> en individuel dans une salle dédiée au calme ou via des ateliers de groupe</li>
+                    <li><strong>Fréquence :</strong> Selon les besoins de l'entreprise</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div id="reflexo-ateliers-section" class="reflexo-section" style="display: none;">
+        <h2>Ateliers</h2>
+        <section id="Ateliers" class="reflexo-block">
+            <h3>Ateliers (6 personnes minimum)</h3>
+            <!-- Introduction -->
+            <div class="intro">
+                <p>
+                    Les ateliers de réflexologie sont une excellente façon d'initier un groupe à cette pratique et de transmettre des techniques simples pour favoriser le bien-être au quotidien.
+                </p>
+            </div>
+            <!-- Objectifs des ateliers -->
+            <div class="objectifs">
+                <h3>Objectifs des ateliers de réflexologie :</h3>
+                <ul>
+                    <li>Apprendre des gestes d'automassage pour soulager le stress, les tensions et les douleurs</li>
+                    <li>Sensibiliser les participants à l'importance de la détente et du bien-être corporel</li>
+                </ul>
+            </div>
+            <!-- Pour qui ? -->
+            <div class="pour-qui">
+                <h3>Pour qui ?</h3>
+                <div class="cible">
+                    <h4>En crèche :</h4>
+                    <p>La refléxologie plantaire en crèche peut aider à apaiser les nourrissons, favorisant leur sommeil et réduisant les troubles digestifs, tout en renforçant leur bien-être général.</p>
+                </div>
+                <div class="cible">
+                    <h4>En milieu scolaire :</h4>
+                    <p>Pour aider les élèves à mieux gérer leur stress et améliorer leur concentration.</p>
+                </div>
+                <div class="cible">
+                    <h4>En entreprise :</h4>
+                    <p>Réflexologie en entreprise pour réduire le stress et améliorer la productivité.</p>
+                </div>
+                <div class="cible">
+                    <h4>Les séniors :</h4>
+                    <p>Ateliers axés sur la gestion des douleurs et la relaxation.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="reflexo-tarifs-section" class="reflexo-section" style="display: none;">
+        <section id="Tarifs">
+            <h2>Tarifs</h2>
+            <br>
+            <div class="carousel-wrapper">
+                <div id="carousel-container" class="carousel-container">
+                    <div class="tarif-card" style="background-image: url('images/adultes.jpg');">
+                        <div class="tarif-info">
+                            <h3>Adultes</h3>
+                            <p>55€ environ 1 heure</p>
+                        </div>
+                    </div>
+                    <div class="tarif-card" style="background-image: url('images/image2.png');">
+                        <div class="tarif-info">
+                            <h3>Enfants/Bébés (jusqu'à 12 ans)</h3>
+                            <p>30€ 30 à 45 minutes</p>
+                        </div>
+                    </div>
+                    <div class="tarif-card" style="background-image: url('images/travail.webp');">
+                        <div class="tarif-info">
+                            <h3>Réflexologie en entreprise</h3>
+                            <p>Sur devis</p>
+                        </div>
+                    </div>
+                    <div class="tarif-card" style="background-image: url('images/ateliers.jpg');">
+                        <div class="tarif-info">
+                            <h3>Ateliers en réflexologie</h3>
+                            <p>Sur devis</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-prev">‹</button>
+                <button class="carousel-next">›</button>
+            </div>
+            <br>
+        </section>
+    </div>
+    <div id="reflexo-deontologie-section" class="reflexo-section" style="display: none;">
+        <section id="deontologie">
+            <h2>Déontologie du réflexologue</h2>
+            <p>Elle repose sur des principes essentiels pour garantir la sécurité et le respect du client :</p>
+            <ul class="deontologie-list">
+                <li><strong>Confidentialité</strong> : Le respect de la vie privée et des informations personnelles du client.</li>
+                <li><strong>Respect de la personne</strong> : Prendre en compte l'intégrité physique et morale du client à tout moment.</li>
+                <li><strong>Consentement éclairé</strong> : Le client doit être informé et donner son accord avant toute pratique.</li>
+                <li><strong>Formation continue</strong> : Le réflexologue doit poursuivre sa formation pour garantir une pratique de qualité.</li>
+                <li><strong>Non diagnostique et transparence</strong> : Le réflexologue ne pose pas de diagnostic médical et agit en toute transparence.</li>
+                <li><strong>Ethique relationnelle</strong> : Respect des valeurs humaines, bien-être et écoute active du client.</li>
+            </ul>
+        </section>
+        <br>
+    </div>
+    <div id="reflexo-mentions-section" class="reflexo-section" style="display: none;">
+        <section id="mentions-legales">
+            <h2>Mentions légales</h2>
+            <p>Marie MARLIAC - Réflexologue</p>
+            <p><strong>SIRET :</strong> 808 679 005</p>
+            <p><strong>Code APE :</strong> 9604Z</p>
+            <p><strong>Adhérente au Service de méditation à la consommation CNPM 27 avenue de la libération 42400 Saint-Chamond.</strong></p>
+            <br>
+        </section>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <script src="js/scripts.js"></script>
 </body>
+<footer>
+    <p>&copy; 2025 Marie Marliac - Tous droits réservés.</p>
+</footer>
+
+</html>
