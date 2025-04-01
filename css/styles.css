@@ -152,7 +152,7 @@ h2 {
 .home-title {
   font-size: 2em;
   text-align: center;
-  color: black;
+  color: white;
   /* Ocre foncé */
   margin-top: 50px;
 }
@@ -160,7 +160,7 @@ h2 {
 /* Texte réflexologie */
 .reflexo-text {
   font-size: 18px;
-  color: black;
+  color: white;
   /* Ocre foncé */
   font-style: italic;
   margin: 20px;
