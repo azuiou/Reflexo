@@ -36,6 +36,13 @@ header img {
   height: auto;
 }
 
+header p{
+  color : white;
+}
+
+header a{
+  color : white !important;
+}
 
 body {
   font-family: 'Arial', sans-serif;
