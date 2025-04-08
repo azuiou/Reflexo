@@ -1069,6 +1069,11 @@ img:hover {
       font-size: 1.3em;
   }
 
+  .contact-info{
+    max-width: 95%;
+  }
+
+  
   .reflexo-block {
       max-width: 95%;
   }
