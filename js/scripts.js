@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sections = {
         "reflexo-plantaire": document.getElementById('reflexo-plantaire-section'),
         "reflexo-faciale": document.getElementById('reflexo-faciale-section'),
+        "drainage-lymph": document.getElementById('drainage-lymph-section'),
         "reflexo-entreprise": document.getElementById('reflexo-entreprise-section'),
         "Ateliers": document.getElementById('reflexo-ateliers-section'),
         "tarifs": document.getElementById('reflexo-tarifs-section'),
